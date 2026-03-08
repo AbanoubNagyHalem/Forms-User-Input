@@ -9,6 +9,7 @@ export default function Login() {
     handleInputBlur: handleEmailBlur,
     hasError: emailHasError,
   } = useInput("", (value) => isEmail(value) && isNotEmpty(value));
+
   const {
     value: passwordValue,
     handleInputChange: handlePasswordChange,
